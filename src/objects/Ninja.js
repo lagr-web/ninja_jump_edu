@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import gsap from "gsap";
 import { Howl } from "howler";
+import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 
 class Ninja {
   
@@ -71,6 +72,7 @@ class Ninja {
 
     
     const loader = new GLTFLoader(manager);
+    loader.setMeshoptDecoder(MeshoptDecoder);
 
     // Load modellen
     loader.load(settings.model, (gltf) => {

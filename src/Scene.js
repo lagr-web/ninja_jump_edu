@@ -9,13 +9,14 @@ class Scene {
 
   constructor() {
 
-    this.ninja = document.createElement("div");
+   this.ninja = document.createElement("div");
     this.ninja.id = "ninja";
     document.body.appendChild(this.ninja);
 
     let ninjaImg = document.createElement("img");
     ninjaImg.src = "./assets/ninja.png";
-    this.ninja.appendChild(ninjaImg);
+    this.ninja.appendChild(ninjaImg); 
+
 
   } //end constructor
 } //end class
