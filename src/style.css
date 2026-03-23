@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-color: #F2E530;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#headline{
+position: absolute;
+  width: 100%; 
+  top:2%;      
+  z-index: 100;
+  font-family: "Bebas Neue";
+  color: hsl(50, 96%, 51%);
+  font-weight: bold;
+  font-size: 8vw;
+  line-height: 1;
+  text-align: center; /* centrerer teksten horisontalt inden i div */
+ } 
+
+ #loader-container{
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+    font-family: "Bebas Neue";
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+  font-size: 5vw;
+ }
